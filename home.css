@@ -21,14 +21,26 @@ body {
     width: 100%;
     justify-content: space-around;
     margin-bottom: 20px;
+    display: flex; /* faz as squares ficarem lado a lado */
+    justify-content: space-between; /* adiciona espaço entre as squares */
+    padding: 10px; /* espaço interno no container das squares */
 }
 
 .square {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: #FFA8BE;
     border-radius: 20px;
     margin: 0 20px;
+    padding: 20px; 
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif; 
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
 }
 
 form {

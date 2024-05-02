@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="home.css">
-        <link rel="icon" href="./img/cerebro.png">
-        <script src="script.js"></script>
-    </head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="./img/cerebro.png">
+    <script src="ia.js" defer></script>
+    <script src="api.js" defer></script>
+</head>
 <body>
     <div class="chat-container">
         <div class="square-container">
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square" id="iaResponse"></div>
+            <div class="square" id="translation"></div>
         </div>
         <form id="messageForm">
             <input type="text" id="messageInput" placeholder="O que você precisa?" required>
-            <button type="submit">ENVIAR</button>
+            <button type="submit" id="send--question">ENVIAR</button>
         </form>
     </div>
 </body>
