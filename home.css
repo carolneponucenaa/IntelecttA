@@ -7,3 +7,54 @@ body {
     margin: 0;
     background-color: #FC4F97;
 }
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.square-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.square {
+    width: 500px;
+    height: 500px;
+    background-color: #FFA8BE;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+}
+
+input[type="text"] {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 15px;
+    flex-grow: 1;
+    padding: 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #FFA8BE;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff91a4;
+}
